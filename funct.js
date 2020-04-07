@@ -30,11 +30,13 @@ function restyle() {
   var size = sizeArr[Math.floor(Math.random() * sizeArr.length)];
   var colorArr = ["red", "turquiose", "black", "purple", "hotpink", "blue"];
   var color = colorArr[Math.floor(Math.random() * colorArr.length)];
+  var colorBG = colorArr[Math.floor(Math.random() * colorArr.length)];
   var textDecorationArr = ["none","underline","overline","dotted"];
   var textDecoration = textDecorationArr[Math.floor(Math.random() * textDecorationArr.length)];
   fortuneOutput.style.color = color;
   fortuneOutput.style.fontSize = size;
   fortuneOutput.style.textDecoration = textDecoration;
+  fortuneOutput.style.background-color = colorBG;
 }
 var halfButton = document.getElementById("half-button");
 halfButton.addEventListener("click", halfNumb);
