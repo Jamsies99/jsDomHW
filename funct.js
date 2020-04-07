@@ -19,7 +19,7 @@ function fortune() {
   ];
   var randomInd = Math.floor(Math.random() * fortunes.length);
   var finalStr = fortunes[randomInd];
-  var msg = "Hi " + name + ", Your fortune is: " + finalStr;
+  var msg =  name + ", here is your fortune: " + finalStr;
   document.getElementById("fortune-output").innerHTML = msg;
   restyle();
 }
