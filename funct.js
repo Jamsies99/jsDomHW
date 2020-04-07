@@ -1,5 +1,7 @@
 
 
+
+
 function halfNumb() {
   var numb = document.getElementById("half-input").value;
   var halfNumb = numb / 2;
@@ -15,8 +17,8 @@ function fortune() {
     "Work will pay its dividends fully",
     "Take opportunity by the horns and command your ship.",
   ];
-  var finalStr = fortunes[randomInd];
   var randomInd = Math.floor(Math.random() * fortunes.length);
+  var finalStr = fortunes[randomInd];
   var msg = "Hi " + name + ", Your fortune is: " + finalStr;
   document.getElementById("fortune-output").innerHTML = msg;
   restyle();
@@ -28,7 +30,7 @@ function restyle() {
   var size = sizeArr[Math.floor(Math.random() * sizeArr.length)];
   var colorArr = ["red", "turquiose", "black", "purple", "hotpink", "blue"];
   var color = colorArr[Math.floor(Math.random() * colorArr.length)];
-  var textDecorationArr = ["none","underline","overline","solid"];
+  var textDecorationArr = ["none","underline","overline","dotted"];
   var textDecoration = textDecorationArr[Math.floor(Math.random() * textDecorationArr.length)];
   fortuneOutput.style.color = color;
   fortuneOutput.style.fontSize = size;
